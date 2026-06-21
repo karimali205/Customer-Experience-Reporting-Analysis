@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CX Solutions e& — Reporting Assessment </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <nav class="topnav" id="topnav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <img src="images/eand-logo.png" alt="e& Logo" onerror="this.style.display='none';">
+        <span class="brand-text">CX Solution e&</span>
+      </div>
+      <ul class="nav-links" role="list">
+        <li><a href="#hero"     class="nav-link" data-section="hero">Overview</a></li>
+        <li><a href="#summary"  class="nav-link" data-section="summary">Summary</a></li>
+        <li><a href="#sla"      class="nav-link" data-section="sla">SLA</a></li>
+        <li><a href="#tagging"  class="nav-link" data-section="tagging">Tagging</a></li>
+        <li><a href="#hotspot"  class="nav-link" data-section="hotspot">Hotspot</a></li>
+        <li><a href="#actions"  class="nav-link" data-section="actions">Action Plan</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+  </nav>
+
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul>
+      <li><a href="#hero"    class="drawer-link">Overview</a></li>
+      <li><a href="#summary" class="drawer-link">Executive Summary</a></li>
+      <li><a href="#sla"     class="drawer-link">SLA Performance</a></li>
+      <li><a href="#tagging" class="drawer-link">Tagging & Categories</a></li>
+      <li><a href="#hotspot" class="drawer-link">Hotspot Analysis</a></li>
+      <li><a href="#actions" class="drawer-link">Action Plan</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <section class="section hero-section" id="hero" aria-label="Report overview">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">September – November, 2025</p>
+      <h1 class="hero-title">Customer Experience<br/><em>Reporting Analysis Assessment</em></h1>
+      <p class="hero-subtitle">
+        Analyzing <strong>7,045 tickets</strong> support tickets across all regions to uncover SLA trends, customer pain points, and operational insights, delivering data-driven recommendations to improve service performance and customer experience.
+      </p>
+      <div class="hero-kpi-row">
+        <div class="hero-kpi" tabindex="0">
+          <span class="kpi-num" data-count="7045">0</span>
+          <span class="kpi-label">Total Tickets</span>
+        </div>
+        <div class="hero-kpi kpi-warn" tabindex="0">
+          <span class="kpi-num" data-count="93.2" data-suffix="%">0</span>
+          <span class="kpi-label">SLA Compliance</span>
+        </div>
+        <div class="hero-kpi kpi-alert" tabindex="0">
+          <span class="kpi-num" data-count="477">0</span>
+          <span class="kpi-label">SLA Violations</span>
+        </div>
+        <div class="hero-kpi kpi-critical" tabindex="0">
+          <span class="kpi-num" data-count="92.7" data-suffix="%">0</span>
+          <span class="kpi-label">Are Complaints</span>
+        </div>
+      </div>
+      <a href="#summary" class="hero-cta">Explore the Analysis ↓</a>
+    </div>
+    <div class="hero-badge reveal-right">
+      <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="70" cy="70" r="65" stroke="rgba(230,0,40,0.1)" stroke-width="1.5"/>
+        <circle cx="70" cy="70" r="45" stroke="rgba(230,0,40,0.05)" stroke-width="1.5"/>
+        <path d="M70 30 L80 60 L112 60 L87 78 L97 108 L70 90 L43 108 L53 78 L28 60 L60 60 Z" fill="rgba(230,0,40,0.03)" stroke="#E60028" stroke-width="1.2"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section" id="summary" aria-labelledby="summary-h2">
+    <div class="container reveal">
+      <div class="section-header">
+        <span class="section-tag">01 — Executive Summary</span>
+        <h2 id="summary-h2" class="section-title">Beyond Customer Inquiries,<br/>Not Just Questions.</h2>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-narrative">
+          <p class="lead-text">
+            Of the 7,045 tickets logged between September and November 2025, <strong>6,530 are complaints</strong> — a 92.7% complaint ratio that signals systemic upstream failures rather than isolated support issues.
+          </p>
+          <p>
+            Product-related issues drive <strong>58.2%</strong> of all volume: missing items (29.7%), wrong items (13.2%), and quality defects (11.8%). These are warehouse and logistics problems arriving in the support queue. Meanwhile, California operates at a breach rate <strong>4× the national average</strong>, and half of all customer survey responses are untagged — crippling root-cause analysis.
+          </p>
+          <p>
+            The October paradox crystallises the tension: agents achieved a record <strong>96% SLA rate</strong> while customer satisfaction <em>fell</em> to its lowest point at <strong>61% CSAT</strong>. Speed without quality is not service.
+          </p>
+        </div>
+
+        <div class="summary-callouts">
+          <div class="callout callout-problem reveal-up">
+            <div class="callout-icon" aria-hidden="true">⚠</div>
+            <div>
+              <strong>October Paradox</strong>
+              <p>96% SLA compliance yet 61% CSAT — agents closing tickets fast but not solving problems.</p>
+            </div>
+          </div>
+          <div class="callout callout-data reveal-up" style="--delay: 0.1s">
+            <div class="callout-icon" aria-hidden="true">📊</div>
+            <div>
+              <strong>Data Blindspot</strong>
+              <p>2,597 of 4,641 survey responses (55.9%) are unclassified — analysis is operating with half a dataset.</p>
+            </div>
+          </div>
+          <div class="callout callout-geo reveal-up" style="--delay: 0.2s">
+            <div class="callout-icon" aria-hidden="true">📍</div>
+            <div>
+              <strong>Geographic Fault Line</strong>
+              <p>California's 27.98% breach rate versus 6.8% national average demands immediate resource reallocation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="sla" aria-labelledby="sla-h2">
+    <div class="container reveal">
+      <div class="section-header">
+        <span class="section-tag section-tag-light">02 — SLA & Weekly Performance</span>
+        <h2 id="sla-h2" class="section-title light">Hotspot Analysis — Weekly &amp; Monthly SLA</h2>
+      </div>
+
+      <div class="chart-insights-grid">
+        <div class="chart-card chart-card-light">
+          <h3 class="chart-title">Weekly Ticket Volume vs SLA Breach Rate</h3>
+          <div class="chart-wrap">
+            <canvas id="weeklyChart" aria-label="Weekly ticket volume and SLA breach rate chart"></canvas>
+          </div>
+        </div>
+
+        <div class="insights-column">
+          <div class="insight-card insight-best reveal-up">
+            <div class="insight-badge">BEST WEEK</div>
+            <strong>Week 37 (September)</strong>
+            <p>527 surveys · <span class="stat-accent">88% CSAT</span> · Highest satisfaction of the period</p>
+          </div>
+          <div class="insight-card insight-best reveal-up" style="--delay:0.1s">
+            <div class="insight-badge">BEST SLA</div>
+            <strong>Week 37 (September)</strong>
+            <p>810 tickets · <span class="stat-accent">90% SLA</span> · Best operational performance</p>
+          </div>
+          <div class="insight-card insight-warn reveal-up" style="--delay:0.2s">
+            <div class="insight-badge">BEST MONTH SLA</div>
+            <strong>October</strong>
+            <p>2,426 tickets · <span class="stat-warn">96% SLA</span></p>
+          </div>
+          <div class="insight-card insight-alert reveal-up" style="--delay:0.3s">
+            <div class="insight-badge">WORST CSAT</div>
+            <strong>October</strong>
+            <p>1,652 surveys · <span class="stat-alert">61% CSAT</span> — the paradox month</p>
+          </div>
+          <div class="insight-card insight-alert reveal-up" style="--delay:0.4s">
+            <div class="insight-badge">SURGE WEEKS</div>
+            <strong>Sep Wk 1 &amp; Nov 10</strong>
+            <p>19.3% and 18.3% breach rates — capacity spikes requiring investigation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="monthly-grid">
+        <div class="month-card reveal-up">
+          <div class="month-name">September</div>
+          <div class="month-stats">
+            <div><span class="m-lbl">Total Tickets</span><span class="m-val">2,878</span></div>
+            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">90.45%</span></div>
+            <div><span class="m-lbl">CSAT Score</span><span class="m-val">78.5%</span></div>
+          </div>
+          <div class="month-progress"><div class="month-bar" style="--w: 90.45%"></div></div>
+        </div>
+        <div class="month-card reveal-up" style="--delay:0.1s">
+          <div class="month-name">October</div>
+          <div class="month-stats">
+            <div><span class="m-lbl">Total Tickets</span><span class="m-val">2,426</span></div>
+            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">96.00%</span></div>
+            <div><span class="m-lbl">CSAT Score</span><span class="m-val">61.0%</span></div>
+          </div>
+          <div class="month-progress"><div class="month-bar" style="--w: 96.00%"></div></div>
+        </div>
+        <div class="month-card reveal-up" style="--delay:0.2s">
+          <div class="month-name">November</div>
+          <div class="month-stats">
+            <div><span class="m-lbl">Total Tickets</span><span class="m-val">1,741</span></div>
+            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">93.85%</span></div>
+            <div><span class="m-lbl">CSAT Score</span><span class="m-val">72.1%</span></div>
+          </div>
+          <div class="month-progress"><div class="month-bar" style="--w: 93.85%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tagging" aria-labelledby="tagging-h2">
+    <div class="container reveal">
+      <div class="section-header">
+        <span class="section-tag">03 — Tagging & Driver Analysis</span>
+        <h2 id="tagging-h2" class="section-title">Where the Failures Originate.</h2>
+      </div>
+
+      <div class="tagging-grid">
+        <div class="chart-card chart-card-light">
+          <h3 class="chart-title">Ticket Volume Distribution by Category</h3>
+          <div class="cat-list">
+            <div class="cat-item">
+              <div class="cat-meta"><span class="cat-name">Missing Item</span><span class="cat-count">2,091 (29.7%)</span></div>
+              <div class="cat-track"><div class="cat-bar" style="--w: 29.7%"></div></div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-meta"><span class="cat-name">Wrong Item Supplied</span><span class="cat-count">929 (13.2%)</span></div>
+              <div class="cat-track"><div class="cat-bar" style="--w: 13.2%"></div></div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-meta"><span class="cat-name">Quality / Damaged</span><span class="cat-count">832 (11.8%)</span></div>
+              <div class="cat-track"><div class="cat-bar" style="--w: 11.8%"></div></div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-meta"><span class="cat-name">General Inquiry</span><span class="cat-count">515 (7.3%)</span></div>
+              <div class="cat-track"><div class="cat-bar" style="--w: 7.3%"></div></div>
+            </div>
+            <div class="cat-item">
+              <div class="cat-meta"><span class="cat-name">Returns / Refunds</span><span class="cat-count">476 (6.8%)</span></div>
+              <div class="cat-track"><div class="cat-bar" style="--w: 6.8%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-card chart-card-light">
+          <h3 class="chart-title">Customer Satisfaction (CSAT) vs Order Categories</h3>
+          <div class="chart-wrap">
+            <canvas id="categoryChart" aria-label="Category performance map chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="hotspot" aria-labelledby="hotspot-h2">
+    <div class="container reveal">
+      <div class="section-header">
+        <span class="section-tag section-tag-light">04 — Hotspot Regional Analysis</span>
+        <h2 id="hotspot-h2" class="section-title light">Regional Breach Analysis.</h2>
+      </div>
+
+      <div class="hotspot-grid">
+        <div class="region-cards">
+          <div class="region-card reg-critical reveal-up">
+            <div class="reg-name">California (CA)</div>
+            <div class="reg-num">27.98%</div>
+            <div class="reg-lbl">SLA Breach Rate (4× National Average)</div>
+          </div>
+          <div class="region-card reveal-up" style="--delay: 0.1s">
+            <div class="reg-name">Texas (TX)</div>
+            <div class="reg-num">7.12%</div>
+            <div class="reg-lbl">SLA Breach Rate</div>
+          </div>
+          <div class="region-card reveal-up" style="--delay: 0.2s">
+            <div class="reg-name">Florida (FL)</div>
+            <div class="reg-num">6.45%</div>
+            <div class="reg-lbl">SLA Breach Rate</div>
+          </div>
+          <div class="region-card reveal-up" style="--delay: 0.3s">
+            <div class="reg-name">New York (NY)</div>
+            <div class="reg-num">5.80%</div>
+            <div class="reg-lbl">SLA Breach Rate</div>
+          </div>
+        </div>
+
+        <div class="chart-card chart-card-light">
+          <h3 class="chart-title">Regional SLA Breach Comparisons</h3>
+          <div class="chart-wrap-sm">
+            <canvas id="regionChart" aria-label="Regional SLA performance comparison chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="actions" aria-labelledby="actions-h2">
+    <div class="container reveal">
+      <div class="section-header">
+        <span class="section-tag">05 — Strategic Action Roadmap</span>
+        <h2 id="actions-h2" class="section-title">Recommendations for Operational Improvement.</h2>
+      </div>
+
+      <div class="actions-grid">
+        <div class="action-card act-red reveal-up">
+          <span class="act-step">Phase 1</span>
+          <h3 class="act-title">Deploy California Taskforce</h3>
+          <p class="act-desc">Inject dedicated tier-2 logistics managers into California dispatch pipelines to address the 27.98% structural breach anomaly immediately.</p>
+          <div class="act-impact">
+            <span class="act-imp-lbl">Target Impact</span>
+            <span class="act-imp-val">Reduce CA breach below 10% inside 30 days</span>
+          </div>
+        </div>
+
+        <div class="action-card act-blue reveal-up" style="--delay: 0.1s">
+          <span class="act-step">Phase 2</span>
+          <h3 class="act-title">Enforce Warehouse QA Controls</h3>
+          <p class="act-desc">Integrate automated weight verification scanning at packaging stations to eliminate the "Missing / Wrong Item" warehouse failures driving 42.9% of volume.</p>
+          <div class="act-impact">
+            <span class="act-imp-lbl">Target Impact</span>
+            <span class="act-imp-val">Prevent 2,800+ repetitive monthly issues</span>
+          </div>
+        </div>
+
+        <div class="action-card act-amber reveal-up" style="--delay: 0.2s">
+          <span class="act-step">Phase 3</span>
+          <h3 class="act-title">Deploy Automated Ticket Triage</h3>
+          <p class="act-desc">Implement mandatory AI classification rules on client portals to resolve the 55.9% untagged feedback loop blindspot.</p>
+          <div class="act-impact">
+            <span class="act-imp-lbl">Target Impact</span>
+            <span class="act-imp-val">Achieve 100% classification transparency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="conclusion-box reveal">
+        <div class="conclusion-inner">
+          <div class="conclusion-left">
+            <h3>Measurable Operational Impact Roadmap</h3>
+          </div>
+          <div class="conclusion-right">
+            <div class="cm-item">
+              <span class="cm-num">58%</span>
+              <span class="cm-lbl">Complaint volume addressable</span>
+            </div>
+            <div class="cm-item">
+              <span class="cm-num">4×</span>
+              <span class="cm-lbl">CA breach vs national avg</span>
+            </div>
+            <div class="cm-item">
+              <span class="cm-num">56%</span>
+              <span class="cm-lbl">Survey data recoverable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>CX Solution e&</span>
+      </div>
+      <p class="footer-meta">CX Solution Reporting Assessment · September – November, 2025 </p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <div class="slide-nav" role="navigation" aria-label="Section navigation">
+    <button class="slide-btn" id="prevBtn" aria-label="Previous section">‹</button>
+    <span class="slide-indicator" id="slideIndicator" aria-live="polymorphic">1 / 6</span>
+    <button class="slide-btn" id="nextBtn" aria-label="Next section">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
