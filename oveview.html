@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CX Assessment Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .card { transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-rose-900 text-white p-6 shadow-lg">
+        <h1 class="text-2xl font-bold">CX Solution e& — Reporting Anyalsis</h1>
+        <p class="text-rose-200 text-sm">Customer Experience Analysis & Operational Insights · Sep  – Nov , 2025</p>
+    </nav>
+
+    <main class="container mx-auto p-6">
+
+        <!-- KPI Row -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-rose-600 card">
+                <p class="text-gray-500 text-xs uppercase font-bold">Total Tickets</p>
+                <p class="text-2xl font-bold">7,045</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-red-600 card">
+                <p class="text-gray-500 text-xs uppercase font-bold">Complaints</p>
+                <p class="text-2xl font-bold text-red-600">92.7%</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-600 card">
+                <p class="text-gray-500 text-xs uppercase font-bold">SLA Compliance</p>
+                <p class="text-2xl font-bold text-green-600">93.2%</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-600 card">
+                <p class="text-gray-500 text-xs uppercase font-bold">SLA Violations</p>
+                <p class="text-2xl font-bold text-orange-600">477</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-red-700 card">
+                <p class="text-gray-500 text-xs uppercase font-bold">CSAT Rate</p>
+                <p class="text-2xl font-bold text-red-700">69.5%</p>
+            </div>
+        </div>
+
+        <!-- Insights Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+
+            <!-- Key Insights -->
+            <section>
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="lightbulb" class="text-yellow-500"></i> Key Insights
+                </h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                        <h3 class="font-bold text-rose-900">Complaints, Not Questions</h3>
+                        <p class="text-gray-600 text-sm">6,530 of 7,045 tickets (92.7%) are complaints, only 428 are enquiries. The system is fielding distress, not just questions.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                        <h3 class="font-bold text-rose-900">Product Issues Drive 58.2%</h3>
+                        <p class="text-gray-600 text-sm">Missing items (29.7%) + wrong item (13.2%) + quality (11.8%) make up the majority of complaints.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                        <h3 class="font-bold text-rose-900">California: Critical SLA Hotspot</h3>
+                        <p class="text-gray-600 text-sm">27.98% SLA breach rate (4x) the national average of 6.8%. Average resolution time of 22.1 hours across 243 tickets.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                        <h3 class="font-bold text-rose-900">Missing Tagging & Survey Gaps</h3>
+                        <p class="text-gray-600 text-sm">~50% of survey forms (2,597 of 4,641) are untagged. 2,869 tickets resolved in 2–24 hours show 0% survey response.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                        <h3 class="font-bold text-rose-900">October's Hidden Quality Drop</h3>
+                        <p class="text-gray-600 text-sm">October hit a record 96% SLA compliance, yet CSAT fell to its lowest point at 61%, speed came at the cost of resolution quality.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommendations -->
+            <section>
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                    <i data-lucide="check-circle" class="text-green-600"></i> Strategic Recommendations
+                </h2>
+                <div class="space-y-4">
+                    <div class="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
+                        <h3 class="font-bold text-green-900">P1: Fix Product & Shipping Mistakes</h3>
+                        <p class="text-green-800 text-sm">Audit warehouse packing with the team to stop missing/wrong item errors before packages ship.</p>
+                    </div>
+                    <div class="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
+                        <h3 class="font-bold text-orange-900">P2: Force Ticket Tagging</h3>
+                        <p class="text-orange-800 text-sm">Make tagging mandatory in the system before a ticket can close, to close the classification gap.</p>
+                    </div>
+                    <div class="bg-rose-50 p-5 rounded-lg border-l-4 border-rose-500">
+                        <h3 class="font-bold text-rose-900">P3: Send Extra Help to California</h3>
+                        <p class="text-rose-800 text-sm">Add agents or redistribute workload to faster regional teams to address the 4x breach rate.</p>
+                    </div>
+                    <div class="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-500">
+                        <h3 class="font-bold text-indigo-900">P4: Fix the Survey Bug</h3>
+                        <p class="text-indigo-800 text-sm">IT to investigate the broken trigger failing to send surveys for the 2–24 hour resolution bucket.</p>
+                    </div>
+                    <div class="bg-yellow-50 p-5 rounded-lg border-l-4 border-yellow-500">
+                        <h3 class="font-bold text-yellow-900">P5: Review October's Service Quality</h3>
+                        <p class="text-yellow-800 text-sm">QA to review agent transcripts to ensure tickets are resolved properly, not just closed quickly.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Regional Snapshot -->
+        <section>
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+                <i data-lucide="map-pin" class="text-rose-600"></i> Regional & Category Snapshot
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                    <p class="text-gray-500 text-xs uppercase font-bold mb-1">West Region</p>
+                    <p class="text-lg font-bold">3,472 tickets · 5.8% breach</p>
+                    <p class="text-sm text-gray-600 mt-1">California skews 5x above the regional average.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                    <p class="text-gray-500 text-xs uppercase font-bold mb-1">Best Performing City</p>
+                    <p class="text-lg font-bold">Connecticut · 2,156 tickets</p>
+                    <p class="text-sm text-gray-600 mt-1">94% SLA compliance, the strongest of any city tracked.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow border border-gray-100">
+                    <p class="text-gray-500 text-xs uppercase font-bold mb-1">Top Ticket Category</p>
+                    <p class="text-lg font-bold">Product · 1,068 surveys</p>
+                    <p class="text-sm text-gray-600 mt-1">74% CSAT, the highest-volume category tracked. Technical follows with 469 surveys at 82% CSAT.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
