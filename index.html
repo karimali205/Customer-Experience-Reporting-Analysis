@@ -24,7 +24,6 @@
         <li><a href="#tagging"  class="nav-link" data-section="tagging">Tagging</a></li>
         <li><a href="#hotspot"  class="nav-link" data-section="hotspot">Hotspot</a></li>
         <li><a href="#actions"  class="nav-link" data-section="actions">Action Plan</a></li>
-        <li><a href="overview.html" class="nav-link">Dashboard</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -41,7 +40,6 @@
       <li><a href="#tagging" class="drawer-link">Tagging & Categories</a></li>
       <li><a href="#hotspot" class="drawer-link">Hotspot Analysis</a></li>
       <li><a href="#actions" class="drawer-link">Action Plan</a></li>
-      <li><a href="overview.html" class="drawer-link">Dashboard</a></li>
     </ul>
   </div>
   <div class="drawer-overlay" id="drawerOverlay"></div>
@@ -68,8 +66,8 @@
           <span class="kpi-label">SLA Violations</span>
         </div>
         <div class="hero-kpi kpi-critical" tabindex="0">
-          <span class="kpi-num" data-count="69.49" data-suffix="%">0</span>
-          <span class="kpi-label">CSAT RATE</span>
+          <span class="kpi-num" data-count="92.7" data-suffix="%">0</span>
+          <span class="kpi-label">Are Complaints</span>
         </div>
       </div>
       <a href="#summary" class="hero-cta">Explore the Analysis ↓</a>
@@ -93,10 +91,10 @@
       <div class="summary-grid">
         <div class="summary-narrative">
           <p class="lead-text">
-            Of the 7,045 tickets logged between September and November 2025, <strong>6,530 are complaints</strong> — a 92.7% complaint ratio. That means the issue is with the system itself, not just standard, everyday support tickets.
+            Of the 7,045 tickets logged between September and November 2025, <strong>6,530 are complaints</strong> — a 92.7% complaint ratio that signals systemic upstream failures rather than isolated support issues.
           </p>
           <p>
-            Product-related issues drive <strong>58.2%</strong> of all volume: missing items (29.7%), wrong items (13.2%), and quality defects (11.8%). These are warehouse and logistics problems arriving in the support queue. Meanwhile, California operates at a breach rate <strong>4× the national average</strong>, and half of all customer survey responses are untagged, crippling root-cause analysis.
+            Product-related issues drive <strong>58.2%</strong> of all volume: missing items (29.7%), wrong items (13.2%), and quality defects (11.8%). These are warehouse and logistics problems arriving in the support queue. Meanwhile, California operates at a breach rate <strong>4× the national average</strong>, and half of all customer survey responses are untagged — crippling root-cause analysis.
           </p>
           <p>
             The October paradox crystallises the tension: agents achieved a record <strong>96% SLA rate</strong> while customer satisfaction <em>fell</em> to its lowest point at <strong>61% CSAT</strong>. Speed without quality is not service.
@@ -115,7 +113,7 @@
             <div class="callout-icon" aria-hidden="true">📊</div>
             <div>
               <strong>Data Blindspot</strong>
-              <p>2,597 of 4,641 survey responses (55.9%) are unclassified, analysis is operating with half a dataset.</p>
+              <p>2,597 of 4,641 survey responses (55.9%) are unclassified — analysis is operating with half a dataset.</p>
             </div>
           </div>
           <div class="callout callout-geo reveal-up" style="--delay: 0.2s">
@@ -165,6 +163,12 @@
             <div class="insight-badge">WORST CSAT</div>
             <strong>October</strong>
             <p>1,652 surveys · <span class="stat-alert">61% CSAT</span> — the paradox month</p>
+          </div>
+          <div class="insight-card insight-alert reveal-up" style="--delay:0.4s">
+            <div class="insight-badge">SURGE WEEKS</div>
+            <strong>Sep Wk 1 &amp; Nov 10</strong>
+            <p>19.3% and 18.3% breach rates — capacity spikes requiring investigation</p>
+          </div>
         </div>
       </div>
 
@@ -172,9 +176,9 @@
         <div class="month-card reveal-up">
           <div class="month-name">September</div>
           <div class="month-stats">
-            <div><span class="m-lbl">Total Tickets</span><span class="m-val">2,808</span></div>
-            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">89.21%</span></div>
-            <div><span class="m-lbl">CSAT Score</span><span class="m-val">78.01%</span></div>
+            <div><span class="m-lbl">Total Tickets</span><span class="m-val">2,878</span></div>
+            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">90.45%</span></div>
+            <div><span class="m-lbl">CSAT Score</span><span class="m-val">78.5%</span></div>
           </div>
           <div class="month-progress"><div class="month-bar" style="--w: 90.45%"></div></div>
         </div>
@@ -182,17 +186,17 @@
           <div class="month-name">October</div>
           <div class="month-stats">
             <div><span class="m-lbl">Total Tickets</span><span class="m-val">2,426</span></div>
-            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">95.59%</span></div>
-            <div><span class="m-lbl">CSAT Score</span><span class="m-val">61.38%</span></div>
+            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">96.00%</span></div>
+            <div><span class="m-lbl">CSAT Score</span><span class="m-val">61.0%</span></div>
           </div>
           <div class="month-progress"><div class="month-bar" style="--w: 96.00%"></div></div>
         </div>
         <div class="month-card reveal-up" style="--delay:0.2s">
           <div class="month-name">November</div>
           <div class="month-stats">
-            <div><span class="m-lbl">Total Tickets</span><span class="m-val">1,811</span></div>
-            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">94.64%</span></div>
-            <div><span class="m-lbl">CSAT Score</span><span class="m-val">66.28%</span></div>
+            <div><span class="m-lbl">Total Tickets</span><span class="m-val">1,741</span></div>
+            <div><span class="m-lbl">SLA Compliance</span><span class="m-val">93.85%</span></div>
+            <div><span class="m-lbl">CSAT Score</span><span class="m-val">72.1%</span></div>
           </div>
           <div class="month-progress"><div class="month-bar" style="--w: 93.85%"></div></div>
         </div>
